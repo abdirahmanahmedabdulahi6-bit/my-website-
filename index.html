@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Super Travel Agency - Shirkada ugu fiican safarka iyo dalxiiska. Qabsso tikidhada diyaaradaha, hoteelada iyo safarada dalxiiska aduunka.">
+  <title>Super Travel - Shirkada Safarka iyo Dalxiiska</title>
+  
+  <!-- FontAwesome Icons for modern visuals -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-paper-plane"></i>
+        </div>
+        SUPER<span>TRAVEL</span>
+      </a>
+      
+      <ul class="nav-menu">
+        <li><a href="#" class="nav-link">Hoyga</a></li>
+        <li><a href="#destinations" class="nav-link">Goobaha Safarka</a></li>
+        <li><a href="#services" class="nav-link">Adeegyada</a></li>
+        <li><a href="#testimonials" class="nav-link">Macaamiisha</a></li>
+        <li><a href="#contact" class="nav-link">Nala Soo Xiriir</a></li>
+      </ul>
+      
+      <a href="#booking" class="nav-cta">Hada Boos Qanso</a>
+    </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span></span> Khibrad Safar oo Cajiib Ah
+        </div>
+        <h1 class="hero-title">
+          Dunida ku Sahami <br><span>Super Travel</span>
+        </h1>
+        <p class="hero-desc">
+          Waxaan kuu diyaarinay safaro dalxiis oo aan la ilaawi karin, tigidho diyaaradeed oo jaban, iyo hoteelo raaxo leh oo ku haboon miisaaniyadaada.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Booking Section -->
+  <section class="container" id="booking">
+    <div class="booking-bar-wrapper">
+      <div class="booking-bar">
+        <form class="booking-form" onsubmit="event.preventDefault();">
+          <div class="form-group">
+            <label for="destination"><i class="fa-solid fa-map-pin"></i> Goobta</label>
+            <div class="input-wrapper">
+              <input type="text" id="destination" placeholder="Halkee rabtaa in aad aado?">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="date"><i class="fa-solid fa-calendar-days"></i> Taariikhda</label>
+            <div class="input-wrapper">
+              <input type="date" id="date">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="duration"><i class="fa-solid fa-clock"></i> Muddada</label>
+            <div class="input-wrapper">
+              <select id="duration">
+                <option value="3">3-5 Maalmood</option>
+                <option value="7" selected>1 Toddobaad</option>
+                <option value="14">2 Toddobaad</option>
+                <option value="30">1 Bil</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="guests"><i class="fa-solid fa-users"></i> Martida</label>
+            <div class="input-wrapper">
+              <select id="guests">
+                <option value="1">1 Qof</option>
+                <option value="2" selected>2 Qofood</option>
+                <option value="4">Qoys (4+ Qof)</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Popular Destinations Section -->
+  <section class="section-padding" id="destinations">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Dalxiiska</span>
+        <h2 class="section-title">Goobaha Ugu <span>Caansan</span></h2>
+      </div>
+      
+      <div class="destinations-grid">
+        <!-- Destination 1 -->
+        <div class="dest-card">
+          <div class="dest-img-container">
+            <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80" alt="Amalfi Coast, Italy">
+            <span class="dest-badge">Talo Soo Jeedin</span>
+            <button class="dest-wishlist"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="dest-info">
+            <div class="dest-meta">
+              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.9 (120 Review)</span>
+              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 7 Maalmood</span>
+            </div>
+            <h3 class="dest-title">Amalfi Coast</h3>
+            <div class="dest-location">
+              <i class="fa-solid fa-location-dot"></i> Talyaaniga (Italy)
+            </div>
+            <div class="dest-footer">
+              <div class="dest-price">
+                <span class="dest-price-label">Qiimaha laga bilaabo</span>
+                <span class="dest-price-value">$1,299<span>/qof</span></span>
+              </div>
+              <a href="#" class="btn-book">Hada Boosgo</a>
+            </div>
+          </div>
+        </div>
+        <!-- Destination 2 -->
+        <div class="dest-card">
+          <div class="dest-img-container">
+            <img src="https://images.unsplash.com/photo-1502784444187-359ac186c5bb?auto=format&fit=crop&w=800&q=80" alt="Swiss Alps, Switzerland">
+            <span class="dest-badge">Caan</span>
+            <button class="dest-wishlist"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="dest-info">
+            <div class="dest-meta">
+              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.8 (95 Review)</span>
+              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 5 Maalmood</span>
+            </div>
+            <h3 class="dest-title">Alps Cabin Resort</h3>
+            <div class="dest-location">
+              <i class="fa-solid fa-location-dot"></i> Iswisarland (Switzerland)
+            </div>
+            <div class="dest-footer">
+              <div class="dest-price">
+                <span class="dest-price-label">Qiimaha laga bilaabo</span>
+                <span class="dest-price-value">$1,599<span>/qof</span></span>
+              </div>
+              <a href="#" class="btn-book">Hada Boosgo</a>
+            </div>
+          </div>
+        </div>
+        <!-- Destination 3 -->
+        <div class="dest-card">
+          <div class="dest-img-container">
+            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80" alt="Kyoto, Japan">
+            <span class="dest-badge">Dhaqan</span>
+            <button class="dest-wishlist"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="dest-info">
+            <div class="dest-meta">
+              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.9 (150 Review)</span>
+              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 10 Maalmood</span>
+            </div>
+            <h3 class="dest-title">Kyoto Pagoda</h3>
+            <div class="dest-location">
+              <i class="fa-solid fa-location-dot"></i> Jabaan (Japan)
+            </div>
+            <div class="dest-footer">
+              <div class="dest-price">
+                <span class="dest-price-label">Qiimaha laga bilaabo</span>
+                <span class="dest-price-value">$1,899<span>/qof</span></span>
+              </div>
+              <a href="#" class="btn-book">Hada Boosgo</a>
+            </div>
+          </div>
+        </div>
+        <!-- Destination 4 -->
+        <div class="dest-card">
+          <div class="dest-img-container">
+            <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80" alt="Masai Mara, Kenya">
+            <span class="dest-badge">Duur-joog</span>
+            <button class="dest-wishlist"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="dest-info">
+            <div class="dest-meta">
+              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.7 (88 Review)</span>
+              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 6 Maalmood</span>
+            </div>
+            <h3 class="dest-title">Masai Mara Safari</h3>
+            <div class="dest-location">
+              <i class="fa-solid fa-location-dot"></i> Kenya
+            </div>
+            <div class="dest-footer">
+              <div class="dest-price">
+                <span class="dest-price-label">Qiimaha laga bilaabo</span>
+                <span class="dest-price-value">$999<span>/qof</span></span>
+              </div>
+              <a href="#" class="btn-book">Hada Boosgo</a>
+            </div>
+          </div>
+        </div>
+        <!-- Destination 5 -->
+        <div class="dest-card">
+          <div class="dest-img-container">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="Paris, France">
+            <span class="dest-badge">Jacayl</span>
+            <button class="dest-wishlist"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="dest-info">
+            <div class="dest-meta">
+              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.8 (210 Review)</span>
+              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 7 Maalmood</span>
+            </div>
+            <h3 class="dest-title">Eiffel Tower Tour</h3>
+            <div class="dest-location">
+              <i class="fa-solid fa-location-dot"></i> Faransiiska (France)
+            </div>
+            <div class="dest-footer">
+              <div class="dest-price">
+                <span class="dest-price-label">Qiimaha laga bilaabo</span>
+                <span class="dest-price-value">$1,499<span>/qof</span></span>
+              </div>
+              <a href="#" class="btn-book">Hada Boosgo</a>
+            </div>
+          </div>
+        </div>
+        <!-- Destination 6 -->
+        <div class="dest-card">
+          <div class="dest-img-container">
+            <img src="https://images.unsplash.com/photo-1504893524553-ac55fce698be?auto=format&fit=crop&w=800&q=80" alt="Iceland">
+            <span class="dest-badge">Dabeecad</span>
+            <button class="dest-wishlist"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="dest-info">
+            <div class="dest-meta">
+              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.9 (115 Review)</span>
+              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 8 Maalmood</span>
+            </div>
+            <h3 class="dest-title">Blue Lagoon Spa</h3>
+            <div class="dest-location">
+              <i class="fa-solid fa-location-dot"></i> Island (Iceland)
+            </div>
+            <div class="dest-footer">
+              <div class="dest-price">
+                <span class="dest-price-label">Qiimaha laga bilaabo</span>
+                <span class="dest-price-value">$1,799<span>/qof</span></span>
+              </div>
+              <a href="#" class="btn-book">Hada Boosgo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services Section -->
+  <section class="section-padding services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Maxaan Qabanaa</span>
+        <h2 class="section-title">Adeegyadeena <span>Khaaska Ah</span></h2>
+      </div>
+      
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-plane-departure"></i>
+          </div>
+          <h3 class="service-title">Tigidho Diyaarad</h3>
+          <p class="service-desc">Waxaan kuu goynaynaa tigidho jaban oo ku haboon duulimaad kasta, ha ahaato gudaha ama dibada.</p>
+        </div>
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-hotel"></i>
+          </div>
+          <h3 class="service-title">Boos-qabasho Hoteel</h3>
+          <p class="service-desc">Waxaan xiriir la leenahay hoteelada ugu fiican aduunka si aad u hesho meel raaxo leh oo jaban.</p>
+        </div>
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-map-location-dot"></i>
+          </div>
+          <h3 class="service-title">Hageyaal Safar</h3>
+          <p class="service-desc">Waxaad heleysaa hageyaal khibrad leh oo yaqaana goobaha taariikhiga ah iyo kuwa dalxiiska.</p>
+        </div>
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="service-title">Ceymiska Safarka</h3>
+          <p class="service-desc">Ku safr kalsooni buuxda anagoo ku siineyna ceymis daboolaya caafimaadkaaga iyo shandadahaaga.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number">12k+</span>
+          <span class="stat-title">Macaamiil</span>
+          <span class="stat-desc">Kuwaas oo nala safray oo nagu kalsoonaaday</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">150+</span>
+          <span class="stat-title">Goobo Safar</span>
+          <span class="stat-desc">Goobo dalxiis oo kala duwan oo aduunka ah</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">15+</span>
+          <span class="stat-title">Sano Khibrad</span>
+          <span class="stat-desc">Khibrad iyo hufnaan shaqo oo dheer</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">99%</span>
+          <span class="stat-title">Qanacsanaan</span>
+          <span class="stat-desc">Dhibcaha ay na siiyeen dadkii nala safray</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials Section -->
+  <section class="section-padding" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Macaamiisha</span>
+        <h2 class="section-title">Waxa Ay <span>Naga Yiraahdeen</span></h2>
+      </div>
+      
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testi-card">
+          <span class="testi-quote">“</span>
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testi-text">
+            "Waxaan Super Travel kala soo qayb qaatay safarkii Amalfi Coast, runtii waxay ahayd khibrad aan la ilaawi karin. Hoteelada iyo hagayaashu waxay ahaayeen kuwa ugu fiican."
+          </p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Ahmed Ali" class="testi-avatar">
+            <div class="testi-author-info">
+              <h4>Ahmed Ali</h4>
+              <p>Ganacsade</p>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="testi-card">
+          <span class="testi-quote">“</span>
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testi-text">
+            "Super Travel waa shirkada kaliya ee aan ku kalsoonahay marka ay timaado dalxiiska iyo tigidhada diyaaradaha. Adeegoodu waa mid degdeg ah oo hufan."
+          </p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Faduma Hassan" class="testi-avatar">
+            <div class="testi-author-info">
+              <h4>Faduma Hassan</h4>
+              <p>Macalimad</p>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="testi-card">
+          <span class="testi-quote">“</span>
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testi-text">
+            "Safar aan u galay dalka Jabaan waxaa ii qorsheysay Super Travel. Wax walba waxay u dhaceen si heersare ah, laga bilaabo garoonka ilaa hoteelka."
+          </p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Mohamed Yusuf" class="testi-avatar">
+            <div class="testi-author-info">
+              <h4>Mohamed Yusuf</h4>
+              <p>Injineer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-box">
+        <h2 class="newsletter-title">Ku Bixi Warsidahayaga</h2>
+        <p class="newsletter-desc">Kala soco qiimo dhimista safarada iyo xirmooyinka dalxiiska ee cusub ee shirkada Super Travel.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Waad ku mahadsantahay isqoristaada!');">
+          <input type="email" placeholder="Geli iimaylkaaga..." required>
+          <button type="submit">Ku Bixi</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-column">
+        <div class="logo footer-logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-paper-plane"></i>
+          </div>
+          SUPER<span>TRAVEL</span>
+        </div>
+        <p class="footer-desc">
+          Super Travel waa shirkada kuugu adeegta hab casri ah, hufan, iyo kalsooni leh. Safarkaaga iyo raaxadaada waa hadafkayaga ugu muhiimsan.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Xiriirada Degdega ah</h3>
+        <div class="footer-links">
+          <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Hoyga</a>
+          <a href="#destinations" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Goobaha Dalxiiska</a>
+          <a href="#services" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Adeegyada</a>
+          <a href="#testimonials" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Macaamiisha</a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Adeegyada Kale</h3>
+        <div class="footer-links">
+          <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Safarada Qoyska</a>
+          <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Dalxiisyada Gaarka ah</a>
+          <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Duulimaadyada Ganacsiga</a>
+          <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Caawinaada 24/7</a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Nala Soo Xiriir</h3>
+        <div class="footer-contact">
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="contact-text">
+              <h4>Cinwaanka</h4>
+              <p>Maka Al-Mukarama Road, Mogadishu, Somalia</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div class="contact-text">
+              <h4>Telefoonka</h4>
+              <p>+252 61 1234567</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div class="contact-text">
+              <h4>Iimaylka</h4>
+              <p>info@supertravel.so</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Super Travel. Xuquuqda oo dhan waa dhowran tahay.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Shuruudaha</a>
+        <a href="#">Khaaska</a>
+      </div>
+    </div>
+  </footer>
+  <!-- Basic Interaction Script -->
+  <script>
+    const header = document.getElementById('header');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    // Simple interaction for wishlist hearts
+    const wishlists = document.querySelectorAll('.dest-wishlist');
+    wishlists.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const icon = btn.querySelector('i');
+        if (icon.classList.contains('fa-regular')) {
+          icon.classList.remove('fa-regular');
+          icon.classList.add('fa-solid');
+          icon.style.color = '#ff4a5a';
+        } else {
+          icon.classList.remove('fa-solid');
+          icon.classList.add('fa-regular');
+          icon.style.color = '';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
