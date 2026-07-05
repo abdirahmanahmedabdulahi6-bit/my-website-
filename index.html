@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Super Travel Agency - Shirkada ugu fiican safarka iyo dalxiiska. Qabsso tikidhada diyaaradaha, hoteelada iyo safarada dalxiiska aduunka.">
-  <title>Super Travel - Shirkada Safarka iyo Dalxiiska</title>
+  <meta name="description" content="Shirkada Super - Shirkada ugu fiican safarka iyo dalxiiska. Qabso tikidhada diyaaradaha, hoteelada iyo safarada dalxiiska aduunka.">
+  <title>Shirkada Super</title>
   
   <!-- FontAwesome Icons for modern visuals -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -20,7 +20,7 @@
         <div class="logo-icon">
           <i class="fa-solid fa-paper-plane"></i>
         </div>
-        SUPER<span>TRAVEL</span>
+        SHIRKADA<span>SUPER</span>
       </a>
       
       <ul class="nav-menu">
@@ -31,7 +31,7 @@
         <li><a href="#contact" class="nav-link">Nala Soo Xiriir</a></li>
       </ul>
       
-      <a href="#booking" class="nav-cta">Hada Boos Qanso</a>
+      <a href="#booking" class="nav-cta" id="nav-cta">Hada Boos Qabso</a>
     </div>
   </header>
   <!-- Hero Section -->
@@ -43,7 +43,7 @@
           <span></span> Khibrad Safar oo Cajiib Ah
         </div>
         <h1 class="hero-title">
-          Dunida ku Sahami <br><span>Super Travel</span>
+          Dunida ku Sahami <br><span>Shirkada Super</span>
         </h1>
         <p class="hero-desc">
           Waxaan kuu diyaarinay safaro dalxiis oo aan la ilaawi karin, tigidho diyaaradeed oo jaban, iyo hoteelo raaxo leh oo ku haboon miisaaniyadaada.
@@ -59,7 +59,17 @@
           <div class="form-group">
             <label for="destination"><i class="fa-solid fa-map-pin"></i> Goobta</label>
             <div class="input-wrapper">
-              <input type="text" id="destination" placeholder="Halkee rabtaa in aad aado?">
+              <input type="text" id="destination" list="somali-cities" placeholder="Halkee rabtaa in aad aado?">
+              <datalist id="somali-cities">
+                <option value="Muqdisho (Xamar)">
+                <option value="Hargeysa">
+                <option value="Boosaaso">
+                <option value="Garoowe">
+                <option value="Qardho">
+                <option value="Beledweyne">
+                <option value="Gaalkacyo">
+                <option value="Burco">
+              </datalist>
             </div>
           </div>
           <div class="form-group">
@@ -89,7 +99,7 @@
               </select>
             </div>
           </div>
-          <button type="submit" class="btn-search">
+          <button type="submit" class="btn-search" id="booking-submit">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
@@ -105,153 +115,210 @@
       </div>
       
       <div class="destinations-grid">
-        <!-- Destination 1 -->
+        <!-- Destination 1: Muqdisho -->
         <div class="dest-card">
           <div class="dest-img-container">
-            <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80" alt="Amalfi Coast, Italy">
-            <span class="dest-badge">Talo Soo Jeedin</span>
-            <button class="dest-wishlist"><i class="fa-regular fa-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=800&q=80" alt="Muqdisho, Soomaaliya">
+            <span class="dest-badge">Caasimada</span>
+            <button class="dest-wishlist" id="wishlist-1"><i class="fa-regular fa-heart"></i></button>
           </div>
           <div class="dest-info">
             <div class="dest-meta">
-              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.9 (120 Review)</span>
-              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 7 Maalmood</span>
+              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.9 (240 Review)</span>
+              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 3 Maalmood</span>
             </div>
-            <h3 class="dest-title">Amalfi Coast</h3>
+            <h3 class="dest-title">Muqdisho (Xamar)</h3>
             <div class="dest-location">
-              <i class="fa-solid fa-location-dot"></i> Talyaaniga (Italy)
+              <i class="fa-solid fa-location-dot"></i> Ganaane / Banaadir
             </div>
             <div class="dest-footer">
               <div class="dest-price">
                 <span class="dest-price-label">Qiimaha laga bilaabo</span>
-                <span class="dest-price-value">$1,299<span>/qof</span></span>
+                <span class="dest-price-value">$150<span>/qof</span></span>
               </div>
-              <a href="#" class="btn-book">Hada Boosgo</a>
+              <a href="#" class="btn-book" id="btn-book-1">Hada Boos Qabso</a>
             </div>
           </div>
         </div>
-        <!-- Destination 2 -->
+        <!-- Destination 2: Hargeysa -->
         <div class="dest-card">
           <div class="dest-img-container">
-            <img src="https://images.unsplash.com/photo-1502784444187-359ac186c5bb?auto=format&fit=crop&w=800&q=80" alt="Swiss Alps, Switzerland">
-            <span class="dest-badge">Caan</span>
-            <button class="dest-wishlist"><i class="fa-regular fa-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80" alt="Hargeysa, Soomaaliya">
+            <span class="dest-badge">Dalxiis</span>
+            <button class="dest-wishlist" id="wishlist-2"><i class="fa-regular fa-heart"></i></button>
           </div>
           <div class="dest-info">
             <div class="dest-meta">
-              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.8 (95 Review)</span>
-              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 5 Maalmood</span>
+              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.8 (180 Review)</span>
+              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 4 Maalmood</span>
             </div>
-            <h3 class="dest-title">Alps Cabin Resort</h3>
+            <h3 class="dest-title">Buuraha Naasa Hablood</h3>
             <div class="dest-location">
-              <i class="fa-solid fa-location-dot"></i> Iswisarland (Switzerland)
+              <i class="fa-solid fa-location-dot"></i> Hargeysa, Somaliland
             </div>
             <div class="dest-footer">
               <div class="dest-price">
                 <span class="dest-price-label">Qiimaha laga bilaabo</span>
-                <span class="dest-price-value">$1,599<span>/qof</span></span>
+                <span class="dest-price-value">$180<span>/qof</span></span>
               </div>
-              <a href="#" class="btn-book">Hada Boosgo</a>
+              <a href="#" class="btn-book" id="btn-book-2">Hada Boos Qabso</a>
             </div>
           </div>
         </div>
-        <!-- Destination 3 -->
+        <!-- Destination 3: Boosaaso -->
         <div class="dest-card">
           <div class="dest-img-container">
-            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80" alt="Kyoto, Japan">
-            <span class="dest-badge">Dhaqan</span>
-            <button class="dest-wishlist"><i class="fa-regular fa-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Boosaaso, Soomaaliya">
+            <span class="dest-badge">Xeeb & Port</span>
+            <button class="dest-wishlist" id="wishlist-3"><i class="fa-regular fa-heart"></i></button>
           </div>
           <div class="dest-info">
             <div class="dest-meta">
-              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.9 (150 Review)</span>
-              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 10 Maalmood</span>
+              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.7 (135 Review)</span>
+              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 3 Maalmood</span>
             </div>
-            <h3 class="dest-title">Kyoto Pagoda</h3>
+            <h3 class="dest-title">Xeebaha Boosaaso</h3>
             <div class="dest-location">
-              <i class="fa-solid fa-location-dot"></i> Jabaan (Japan)
+              <i class="fa-solid fa-location-dot"></i> Bari, Puntland
             </div>
             <div class="dest-footer">
               <div class="dest-price">
                 <span class="dest-price-label">Qiimaha laga bilaabo</span>
-                <span class="dest-price-value">$1,899<span>/qof</span></span>
+                <span class="dest-price-value">$140<span>/qof</span></span>
               </div>
-              <a href="#" class="btn-book">Hada Boosgo</a>
+              <a href="#" class="btn-book" id="btn-book-3">Hada Boos Qabso</a>
             </div>
           </div>
         </div>
-        <!-- Destination 4 -->
+        <!-- Destination 4: Garoowe -->
         <div class="dest-card">
           <div class="dest-img-container">
-            <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80" alt="Masai Mara, Kenya">
-            <span class="dest-badge">Duur-joog</span>
-            <button class="dest-wishlist"><i class="fa-regular fa-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1473163928189-364b2c4e1135?auto=format&fit=crop&w=800&q=80" alt="Garoowe, Soomaaliya">
+            <span class="dest-badge">Nabdoon</span>
+            <button class="dest-wishlist" id="wishlist-4"><i class="fa-regular fa-heart"></i></button>
           </div>
           <div class="dest-info">
             <div class="dest-meta">
-              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.7 (88 Review)</span>
-              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 6 Maalmood</span>
+              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.8 (110 Review)</span>
+              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 3 Maalmood</span>
             </div>
-            <h3 class="dest-title">Masai Mara Safari</h3>
+            <h3 class="dest-title">Garoowe City</h3>
             <div class="dest-location">
-              <i class="fa-solid fa-location-dot"></i> Kenya
+              <i class="fa-solid fa-location-dot"></i> Nugaal, Puntland
             </div>
             <div class="dest-footer">
               <div class="dest-price">
                 <span class="dest-price-label">Qiimaha laga bilaabo</span>
-                <span class="dest-price-value">$999<span>/qof</span></span>
+                <span class="dest-price-value">$130<span>/qof</span></span>
               </div>
-              <a href="#" class="btn-book">Hada Boosgo</a>
+              <a href="#" class="btn-book" id="btn-book-4">Hada Boos Qabso</a>
             </div>
           </div>
         </div>
-        <!-- Destination 5 -->
+        <!-- Destination 5: Qardho -->
         <div class="dest-card">
           <div class="dest-img-container">
-            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="Paris, France">
-            <span class="dest-badge">Jacayl</span>
-            <button class="dest-wishlist"><i class="fa-regular fa-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Qardho, Soomaaliya">
+            <span class="dest-badge">Dhaqanka</span>
+            <button class="dest-wishlist" id="wishlist-5"><i class="fa-regular fa-heart"></i></button>
           </div>
           <div class="dest-info">
             <div class="dest-meta">
-              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.8 (210 Review)</span>
-              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 7 Maalmood</span>
+              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.9 (95 Review)</span>
+              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 2 Maalmood</span>
             </div>
-            <h3 class="dest-title">Eiffel Tower Tour</h3>
+            <h3 class="dest-title">Qasriyada Qardho</h3>
             <div class="dest-location">
-              <i class="fa-solid fa-location-dot"></i> Faransiiska (France)
+              <i class="fa-solid fa-location-dot"></i> Karkaar, Puntland
             </div>
             <div class="dest-footer">
               <div class="dest-price">
                 <span class="dest-price-label">Qiimaha laga bilaabo</span>
-                <span class="dest-price-value">$1,499<span>/qof</span></span>
+                <span class="dest-price-value">$110<span>/qof</span></span>
               </div>
-              <a href="#" class="btn-book">Hada Boosgo</a>
+              <a href="#" class="btn-book" id="btn-book-5">Hada Boos Qabso</a>
             </div>
           </div>
         </div>
-        <!-- Destination 6 -->
+        <!-- Destination 6: Beledweyne -->
+        <!-- Destination 6: Berbera -->
         <div class="dest-card">
           <div class="dest-img-container">
-            <img src="https://images.unsplash.com/photo-1504893524553-ac55fce698be?auto=format&fit=crop&w=800&q=80" alt="Iceland">
-            <span class="dest-badge">Dabeecad</span>
-            <button class="dest-wishlist"><i class="fa-regular fa-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=800&q=80" alt="Beledweyne, Soomaaliya">
+            <span class="dest-badge">Wabiga</span>
+            <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80" alt="Berbera, Soomaaliya">
+            <span class="dest-badge">Xeeb & Deked</span>
+            <button class="dest-wishlist" id="wishlist-6"><i class="fa-regular fa-heart"></i></button>
           </div>
           <div class="dest-info">
             <div class="dest-meta">
-              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.9 (115 Review)</span>
-              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 8 Maalmood</span>
+              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.6 (85 Review)</span>
+              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.7 (98 Review)</span>
+              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 3 Maalmood</span>
             </div>
-            <h3 class="dest-title">Blue Lagoon Spa</h3>
+            <h3 class="dest-title">Dooxada Hiiraan</h3>
+            <h3 class="dest-title">Xeebta Batalaale</h3>
             <div class="dest-location">
-              <i class="fa-solid fa-location-dot"></i> Island (Iceland)
+              <i class="fa-solid fa-location-dot"></i> Beledweyne, Hiiraan
+              <i class="fa-solid fa-location-dot"></i> Berbera, Saaxil
             </div>
             <div class="dest-footer">
               <div class="dest-price">
                 <span class="dest-price-label">Qiimaha laga bilaabo</span>
-                <span class="dest-price-value">$1,799<span>/qof</span></span>
+                <span class="dest-price-value">$120<span>/qof</span></span>
+                <span class="dest-price-value">$145<span>/qof</span></span>
               </div>
-              <a href="#" class="btn-book">Hada Boosgo</a>
+              <a href="#" class="btn-book" id="btn-book-6">Hada Boos Qabso</a>
+            </div>
+          </div>
+        </div>
+        <!-- Destination 7: Gaalkacyo -->
+        <div class="dest-card">
+          <div class="dest-img-container">
+            <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=800&q=80" alt="Gaalkacyo, Soomaaliya">
+            <span class="dest-badge">Ganacsi</span>
+            <button class="dest-wishlist" id="wishlist-7"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="dest-info">
+            <div class="dest-meta">
+              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.7 (105 Review)</span>
+              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 3 Maalmood</span>
+            </div>
+            <h3 class="dest-title">Gaalkacyo Hub</h3>
+            <div class="dest-location">
+              <i class="fa-solid fa-location-dot"></i> Mudug, Soomaaliya
+            </div>
+            <div class="dest-footer">
+              <div class="dest-price">
+                <span class="dest-price-label">Qiimaha laga bilaabo</span>
+                <span class="dest-price-value">$125<span>/qof</span></span>
+              </div>
+              <a href="#" class="btn-book" id="btn-book-7">Hada Boos Qabso</a>
+            </div>
+          </div>
+        </div>
+        <!-- Destination 8: Burco -->
+        <div class="dest-card">
+          <div class="dest-img-container">
+            <img src="https://images.unsplash.com/photo-1472214222555-d404758b1c42?auto=format&fit=crop&w=800&q=80" alt="Burco, Soomaaliya">
+            <span class="dest-badge">Xoolaha & Taariikh</span>
+            <button class="dest-wishlist" id="wishlist-8"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="dest-info">
+            <div class="dest-meta">
+              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.8 (115 Review)</span>
+              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 3 Maalmood</span>
+            </div>
+            <h3 class="dest-title">Magaalada Burco</h3>
+            <div class="dest-location">
+              <i class="fa-solid fa-location-dot"></i> Togdheer, Somaliland
+            </div>
+            <div class="dest-footer">
+              <div class="dest-price">
+                <span class="dest-price-label">Qiimaha laga bilaabo</span>
+                <span class="dest-price-value">$135<span>/qof</span></span>
+              </div>
+              <a href="#" class="btn-book" id="btn-book-8">Hada Boos Qabso</a>
             </div>
           </div>
         </div>
@@ -349,7 +416,7 @@
             <i class="fa-solid fa-star"></i>
           </div>
           <p class="testi-text">
-            "Waxaan Super Travel kala soo qayb qaatay safarkii Amalfi Coast, runtii waxay ahayd khibrad aan la ilaawi karin. Hoteelada iyo hagayaashu waxay ahaayeen kuwa ugu fiican."
+            "Waxaan Shirkada Super kala soo qayb qaatay safarkii Muqdisho iyo xeebteeda Lido, runtii waxay ahayd khibrad aad u cajiib ah oo aan la ilaawi karin. Adeeggoodu waa heer sare."
           </p>
           <div class="testi-author">
             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Ahmed Ali" class="testi-avatar">
@@ -370,7 +437,7 @@
             <i class="fa-solid fa-star"></i>
           </div>
           <p class="testi-text">
-            "Super Travel waa shirkada kaliya ee aan ku kalsoonahay marka ay timaado dalxiiska iyo tigidhada diyaaradaha. Adeegoodu waa mid degdeg ah oo hufan."
+            "Shirkada Super waa shirkada kaliya ee aan ku kalsoonahay marka ay timaado dalxiiska gudaha dalka Soomaaliya iyo tikidhada diyaaradaha. Si fudud ayaad u dalban kartaa."
           </p>
           <div class="testi-author">
             <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Faduma Hassan" class="testi-avatar">
@@ -391,7 +458,7 @@
             <i class="fa-solid fa-star"></i>
           </div>
           <p class="testi-text">
-            "Safar aan u galay dalka Jabaan waxaa ii qorsheysay Super Travel. Wax walba waxay u dhaceen si heersare ah, laga bilaabo garoonka ilaa hoteelka."
+            "Safar aan u galay magaalada taariikhiga ah ee Hargeysa iyo buuraha Naasa Hablood waxaa ii qorsheysay Shirkada Super. Wax walba waxay ahaayeen kuwo si heersare ah loo agaasimay."
           </p>
           <div class="testi-author">
             <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Mohamed Yusuf" class="testi-avatar">
@@ -409,10 +476,10 @@
     <div class="container">
       <div class="newsletter-box">
         <h2 class="newsletter-title">Ku Bixi Warsidahayaga</h2>
-        <p class="newsletter-desc">Kala soco qiimo dhimista safarada iyo xirmooyinka dalxiiska ee cusub ee shirkada Super Travel.</p>
-        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Waad ku mahadsantahay isqoristaada!');">
-          <input type="email" placeholder="Geli iimaylkaaga..." required>
-          <button type="submit">Ku Bixi</button>
+        <p class="newsletter-desc">Kala soco qiimo dhimista safarada iyo xirmooyinka dalxiiska ee cusub ee Shirkada Super.</p>
+        <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault(); alert('Waad ku mahadsantahay isqoristaada!');">
+          <input type="email" id="newsletter-email" placeholder="Geli iimaylkaaga..." required>
+          <button type="submit" id="btn-newsletter">Ku Bixi</button>
         </form>
       </div>
     </div>
@@ -425,10 +492,10 @@
           <div class="logo-icon">
             <i class="fa-solid fa-paper-plane"></i>
           </div>
-          SUPER<span>TRAVEL</span>
+          SHIRKADA<span>SUPER</span>
         </div>
         <p class="footer-desc">
-          Super Travel waa shirkada kuugu adeegta hab casri ah, hufan, iyo kalsooni leh. Safarkaaga iyo raaxadaada waa hadafkayaga ugu muhiimsan.
+          Shirkada Super waa shirkad kuugu adeegta hab casri ah, hufan, iyo kalsooni leh. Safarkaaga iyo raaxadaada waa hadafkayaga ugu muhiimsan.
         </p>
         <div class="social-links">
           <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
@@ -463,14 +530,14 @@
             <i class="fa-solid fa-location-dot"></i>
             <div class="contact-text">
               <h4>Cinwaanka</h4>
-              <p>Maka Al-Mukarama Road, Mogadishu, Somalia</p>
+              <p>Maka Al-Mukarama Road, Qardho, Somalia</p>
             </div>
           </div>
           <div class="contact-item">
             <i class="fa-solid fa-phone"></i>
             <div class="contact-text">
               <h4>Telefoonka</h4>
-              <p>+252 61 1234567</p>
+              <p>+252 5359698</p>
             </div>
           </div>
           <div class="contact-item">
@@ -485,7 +552,7 @@
     </div>
     
     <div class="container footer-bottom">
-      <p>&copy; 2026 Super Travel. Xuquuqda oo dhan waa dhowran tahay.</p>
+      <p>&copy; 2026 Shirkada Super. Xuquuqda oo dhan waa dhowran tahay.</p>
       <div class="footer-bottom-links">
         <a href="#">Shuruudaha</a>
         <a href="#">Khaaska</a>
