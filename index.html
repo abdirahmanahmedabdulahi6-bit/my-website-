@@ -1,592 +1,234 @@
 <!DOCTYPE html>
 <html lang="so">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Shirkada Super - Shirkada ugu fiican safarka iyo dalxiiska. Qabso tikidhada diyaaradaha, hoteelada iyo safarada dalxiiska aduunka.">
-  <title>Shirkada Super</title>
-  
-  <!-- FontAwesome Icons for modern visuals -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technical Qardho School — Dugsiga Farsamada</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header" id="header">
-    <div class="container nav-container">
-      <a href="#" class="logo">
-        <div class="logo-icon">
-          <i class="fa-solid fa-paper-plane"></i>
-        </div>
-        SHIRKADA<span>SUPER</span>
-      </a>
-      
-      <ul class="nav-menu">
-        <li><a href="#" class="nav-link">Hoyga</a></li>
-        <li><a href="#destinations" class="nav-link">Goobaha Safarka</a></li>
-        <li><a href="#services" class="nav-link">Adeegyada</a></li>
-        <li><a href="#testimonials" class="nav-link">Macaamiisha</a></li>
-        <li><a href="#contact" class="nav-link">Nala Soo Xiriir</a></li>
-      </ul>
-      
-      <a href="#booking" class="nav-cta" id="nav-cta">Hada Boos Qabso</a>
-    </div>
-  </header>
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-tag">
-          <span></span> Khibrad Safar oo Cajiib Ah
-        </div>
-        <h1 class="hero-title">
-          Dunida ku Sahami <br><span>Shirkada Super</span>
-        </h1>
-        <p class="hero-desc">
-          Waxaan kuu diyaarinay safaro dalxiis oo aan la ilaawi karin, tigidho diyaaradeed oo jaban, iyo hoteelo raaxo leh oo ku haboon miisaaniyadaada.
-        </p>
+
+<header>
+  <nav>
+    <div class="brand">
+      <div class="brand-mark">TQ</div>
+      <div class="brand-text">
+        <div class="t1">Technical Qardho</div>
+        <div class="t2">School</div>
       </div>
     </div>
-  </section>
-  <!-- Booking Section -->
-  <section class="container" id="booking">
-    <div class="booking-bar-wrapper">
-      <div class="booking-bar">
-        <form class="booking-form" onsubmit="event.preventDefault();">
-          <div class="form-group">
-            <label for="destination"><i class="fa-solid fa-map-pin"></i> Goobta</label>
-            <div class="input-wrapper">
-              <input type="text" id="destination" list="somali-cities" placeholder="Halkee rabtaa in aad aado?">
-              <datalist id="somali-cities">
-                <option value="Muqdisho (Xamar)">
-                <option value="Hargeysa">
-                <option value="Boosaaso">
-                <option value="Garoowe">
-                <option value="Qardho">
-                <option value="Beledweyne">
-                <option value="Gaalkacyo">
-                <option value="Burco">
-              </datalist>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="date"><i class="fa-solid fa-calendar-days"></i> Taariikhda</label>
-            <div class="input-wrapper">
-              <input type="date" id="date">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="duration"><i class="fa-solid fa-clock"></i> Muddada</label>
-            <div class="input-wrapper">
-              <select id="duration">
-                <option value="3">3-5 Maalmood</option>
-                <option value="7" selected>1 Toddobaad</option>
-                <option value="14">2 Toddobaad</option>
-                <option value="30">1 Bil</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="guests"><i class="fa-solid fa-users"></i> Martida</label>
-            <div class="input-wrapper">
-              <select id="guests">
-                <option value="1">1 Qof</option>
-                <option value="2" selected>2 Qofood</option>
-                <option value="4">Qoys (4+ Qof)</option>
-              </select>
-            </div>
-          </div>
-          <button type="submit" class="btn-search" id="booking-submit">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </form>
+    <ul class="nav-links">
+      <li><a href="#hero">Guriga</a></li>
+      <li><a href="#about">Ku Saabsan</a></li>
+      <li><a href="#subjects">Maaddooyinka</a></li>
+      <li><a href="#why">Faa'iidooyinka</a></li>
+      <li><a href="#contact">Nala Soo Xiriir</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-amber">Iska Diiwaan Geli</a>
+    </div>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<section class="hero" id="hero">
+  <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="sheet-label"><span class="dash"></span> DUGSIGA FARSAMADA — QARDHO</div>
+      <h1>Waxbarasho farsamo ah oo <span>dhabta ah</span>, mustaqbal dhis ah.</h1>
+      <p class="lead">Technical Qardho School waa dugsi hormuud u ah waxbarashada farsamada iyo cilmiga ku dhaqan leh, kaas oo ardaydiisa u diyaariya suuqa shaqada iyo jaamacadaha.</p>
+      <div class="hero-actions">
+        <a href="#subjects" class="btn btn-amber">Eeg Maaddooyinka</a>
+        <a href="#contact" class="btn btn-outline">Nala Soo Xiriir</a>
       </div>
     </div>
-  </section>
-  <!-- Popular Destinations Section -->
-  <section class="section-padding" id="destinations">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Dalxiiska</span>
-        <h2 class="section-title">Goobaha Ugu <span>Caansan</span></h2>
+    <div class="hero-panel">
+      <div class="panel-title">Xogta Dugsiga</div>
+      <div class="spec-row"><span>Maaddooyinka la bixiyo</span><b>11</b></div>
+      <div class="spec-row"><span>Goobta</span><b>Qardho, Bari</b></div>
+      <div class="spec-row"><span>Nooca</span><b>Farsamo &amp; Cilmi</b></div>
+      <div class="spec-row"><span>Luqadaha waxbarashada</span><b>Soomaali / Ingiriisi</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="eyebrow">Ku Saabsan Dugsiga</div>
+      <h2>Waxbarasho isku dheelitiran oo caqiido, luqad iyo farsamo</h2>
+      <p>Technical Qardho School wuxuu bixiyaa qorshe waxbarasheed dhammaystiran oo ka kooban diinta, luqadaha, sayniska iyo maaddooyinka farsamada ee ugu muhiimsan, si ardaydu u helaan aqoon iyo xirfado labadaba.</p>
+      <p>Macallimiinteena waa kuwo khibrad leh, qalabkeenu waa mid casri ah, ujeeddadeenana waa in aan dhalinyarada Qardho u diyaarino mustaqbal wanaagsan.</p>
+    </div>
+    <div class="stat-grid">
+      <div class="stat-box"><div class="num">11<span>+</span></div><div class="label">Maaddooyin</div></div>
+      <div class="stat-box"><div class="num">4<span>+</span></div><div class="label">Aqoonyahano oo Injineernimo</div></div>
+      <div class="stat-box"><div class="num">100<span>%</span></div><div class="label">Diyaargarow Farsamo</div></div>
+      <div class="stat-box"><div class="num">1<span>st</span></div><div class="label">Dugsi Farsamo oo Qardho ah</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="subjects" id="subjects">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Manhajka</div>
+      <h2>11 Maaddo oo aan ku bixinno</h2>
+      <p>Qeybaha waxbarasheed ee dugsigeenu bixiyo, oo ka kooban diinta, luqadaha, sayniska iyo farsamada.</p>
+    </div>
+    <div class="subject-grid">
+
+      <div class="subject-card" style="animation-delay:.02s">
+        <span class="subject-code">01</span>
+        <svg class="subject-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3a7 7 0 1 0 8.5 9A8 8 0 0 1 12 3z"/></svg>
+        <h3>Diinta Islaamka</h3><p>Aqoonta diinta iyo akhlaaqda</p>
       </div>
-      
-      <div class="destinations-grid">
-        <!-- Destination 1: Muqdisho -->
-        <div class="dest-card">
-          <div class="dest-img-container">
-            <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=800&q=80" alt="Muqdisho, Soomaaliya">
-            <span class="dest-badge">Caasimada</span>
-            <button class="dest-wishlist" id="wishlist-1"><i class="fa-regular fa-heart"></i></button>
-          </div>
-          <div class="dest-info">
-            <div class="dest-meta">
-              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.9 (240 Review)</span>
-              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 3 Maalmood</span>
-            </div>
-            <h3 class="dest-title">Muqdisho (Xamar)</h3>
-            <div class="dest-location">
-              <i class="fa-solid fa-location-dot"></i> Ganaane / Banaadir
-            </div>
-            <div class="dest-footer">
-              <div class="dest-price">
-                <span class="dest-price-label">Qiimaha laga bilaabo</span>
-                <span class="dest-price-value">$150<span>/qof</span></span>
-              </div>
-              <a href="#" class="btn-book" id="btn-book-1">Hada Boos Qabso</a>
-            </div>
-          </div>
+      <div class="subject-card" style="animation-delay:.06s">
+        <span class="subject-code">02</span>
+        <svg class="subject-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 19V5a2 2 0 0 1 2-2h11l3 3v13"/><path d="M4 19h14"/><path d="M8 8h6M8 12h6"/></svg>
+        <h3>Af Carabi</h3><p>Luqadda Carabiga</p>
+      </div>
+      <div class="subject-card" style="animation-delay:.10s">
+        <span class="subject-code">03</span>
+        <svg class="subject-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+        <h3>Af Ingiriisi</h3><p>Luqadda Ingiriisiga</p>
+      </div>
+      <div class="subject-card" style="animation-delay:.14s">
+        <span class="subject-code">04</span>
+        <svg class="subject-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        <h3>Af Soomaali</h3><p>Luqadda Hooyo</p>
+      </div>
+      <div class="subject-card" style="animation-delay:.18s">
+        <span class="subject-code">05</span>
+        <svg class="subject-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="1.6"/><ellipse cx="12" cy="12" rx="9" ry="4"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(120 12 12)"/></svg>
+        <h3>Fiisigis (Physics)</h3><p>Sayniska dhaqdhaqaaqa &amp; xoogga</p>
+      </div>
+      <div class="subject-card" style="animation-delay:.22s">
+        <span class="subject-code">06</span>
+        <svg class="subject-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M6 3c0 6-3 8-3 12a9 9 0 0 0 18 0c0-4-3-6-3-12"/><path d="M9 21c0-6 3-9 3-13"/></svg>
+        <h3>Bayoolaji (Biology)</h3><p>Sayniska nolosha</p>
+      </div>
+      <div class="subject-card" style="animation-delay:.26s">
+        <span class="subject-code">07</span>
+        <svg class="subject-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M9 3v6L4 18a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3L15 9V3"/><path d="M9 3h6M8 14h8"/></svg>
+        <h3>Kiimiko (Chemistry)</h3><p>Sayniska walxaha</p>
+      </div>
+      <div class="subject-card" style="animation-delay:.30s">
+        <span class="subject-code">08</span>
+        <svg class="subject-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M8 20h8M12 16v4"/></svg>
+        <h3>ICT</h3><p>Teknoolajiyada Macluumaadka</p>
+      </div>
+      <div class="subject-card" style="animation-delay:.34s">
+        <span class="subject-code">09</span>
+        <svg class="subject-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+        <h3>Injineeriinta Korontada</h3><p>Electrical Engineering</p>
+      </div>
+      <div class="subject-card" style="animation-delay:.38s">
+        <span class="subject-code">10</span>
+        <svg class="subject-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 21V10l9-6 9 6v11"/><path d="M9 21v-6h6v6M3 10h18"/></svg>
+        <h3>Injineeriinta Dhismaha</h3><p>Construction Engineering</p>
+      </div>
+      <div class="subject-card" style="animation-delay:.42s">
+        <span class="subject-code">11</span>
+        <svg class="subject-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="8" r="2"/><path d="M12 10 4 20h16z"/><path d="M9 15h6"/></svg>
+        <h3>Xisaabta (Mathematics)</h3><p>Aasaaska farsamada</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:0;">
+      <div class="eyebrow">Sababaha Aad Nooga Dooran Karto</div>
+      <h2 style="color:var(--blueprint-deep)">Waxa naga dhiga dugsi gaar ah</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="idx">01</div>
+        <h3>Manhaj Dhammaystiran</h3>
+        <p>11 maaddo oo isugu jira diinta, luqadaha, sayniska iyo farsamada si ardaydu u helaan aqoon buuxda.</p>
+      </div>
+      <div class="why-card">
+        <div class="idx">02</div>
+        <h3>Farsamo Casri ah</h3>
+        <p>Waxbarasho injineernimo oo ku dhisan qalab iyo tabaruc casri ah, si loo diyaariyo suuqa shaqada.</p>
+      </div>
+      <div class="why-card">
+        <div class="idx">03</div>
+        <h3>Macallimiin Khibrad Leh kana koban 8 teacher dhiga qeybaha kal duwan madoyink</h3>
+        <p>Kooxdeena waxbarasheed waxay leedahay khibrad ku filan oo ka dhiganta hoggaamiye ku habboon dugsiyada farsamada.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="eyebrow">Nala Soo Xiriir</div>
+      <h2>Ku biir Technical Qardho School</h2>
+      <p class="lead">Haddii aad rabto in aad wax badan ka ogaato manhajkeena ama aad diiwaan gasho, nala soo xiriir hadda.</p>
+      <div class="contact-info">
+        <div class="row">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Qardho, Gobolka Bari, Somalia</span>
         </div>
-        <!-- Destination 2: Hargeysa -->
-        <div class="dest-card">
-          <div class="dest-img-container">
-            <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80" alt="Hargeysa, Soomaaliya">
-            <span class="dest-badge">Dalxiis</span>
-            <button class="dest-wishlist" id="wishlist-2"><i class="fa-regular fa-heart"></i></button>
-          </div>
-          <div class="dest-info">
-            <div class="dest-meta">
-              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.8 (180 Review)</span>
-              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 4 Maalmood</span>
-            </div>
-            <h3 class="dest-title">Buuraha Naasa Hablood</h3>
-            <div class="dest-location">
-              <i class="fa-solid fa-location-dot"></i> Hargeysa, Somaliland
-            </div>
-            <div class="dest-footer">
-              <div class="dest-price">
-                <span class="dest-price-label">Qiimaha laga bilaabo</span>
-                <span class="dest-price-value">$180<span>/qof</span></span>
-              </div>
-              <a href="#" class="btn-book" id="btn-book-2">Hada Boos Qabso</a>
-            </div>
-          </div>
+        <div class="row">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+          <span>+252 907410200 ustaad axned</span>
         </div>
-        <!-- Destination 3: Boosaaso -->
-        <div class="dest-card">
-          <div class="dest-img-container">
-            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Boosaaso, Soomaaliya">
-            <span class="dest-badge">Xeeb & Port</span>
-            <button class="dest-wishlist" id="wishlist-3"><i class="fa-regular fa-heart"></i></button>
-          </div>
-          <div class="dest-info">
-            <div class="dest-meta">
-              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.7 (135 Review)</span>
-              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 3 Maalmood</span>
-            </div>
-            <h3 class="dest-title">Xeebaha Boosaaso</h3>
-            <div class="dest-location">
-              <i class="fa-solid fa-location-dot"></i> Bari, Puntland
-            </div>
-            <div class="dest-footer">
-              <div class="dest-price">
-                <span class="dest-price-label">Qiimaha laga bilaabo</span>
-                <span class="dest-price-value">$140<span>/qof</span></span>
-              </div>
-              <a href="#" class="btn-book" id="btn-book-3">Hada Boos Qabso</a>
-            </div>
-          </div>
-        </div>
-        <!-- Destination 4: Garoowe -->
-        <div class="dest-card">
-          <div class="dest-img-container">
-            <img src="https://images.unsplash.com/photo-1473163928189-364b2c4e1135?auto=format&fit=crop&w=800&q=80" alt="Garoowe, Soomaaliya">
-            <span class="dest-badge">Nabdoon</span>
-            <button class="dest-wishlist" id="wishlist-4"><i class="fa-regular fa-heart"></i></button>
-          </div>
-          <div class="dest-info">
-            <div class="dest-meta">
-              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.8 (110 Review)</span>
-              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 3 Maalmood</span>
-            </div>
-            <h3 class="dest-title">Garoowe City</h3>
-            <div class="dest-location">
-              <i class="fa-solid fa-location-dot"></i> Nugaal, Puntland
-            </div>
-            <div class="dest-footer">
-              <div class="dest-price">
-                <span class="dest-price-label">Qiimaha laga bilaabo</span>
-                <span class="dest-price-value">$130<span>/qof</span></span>
-              </div>
-              <a href="#" class="btn-book" id="btn-book-4">Hada Boos Qabso</a>
-            </div>
-          </div>
-        </div>
-        <!-- Destination 5: Qardho -->
-        <div class="dest-card">
-          <div class="dest-img-container">
-            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Qardho, Soomaaliya">
-            <span class="dest-badge">Dhaqanka</span>
-            <button class="dest-wishlist" id="wishlist-5"><i class="fa-regular fa-heart"></i></button>
-          </div>
-          <div class="dest-info">
-            <div class="dest-meta">
-              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.9 (95 Review)</span>
-              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 2 Maalmood</span>
-            </div>
-            <h3 class="dest-title">Qasriyada Qardho</h3>
-            <div class="dest-location">
-              <i class="fa-solid fa-location-dot"></i> Karkaar, Puntland
-            </div>
-            <div class="dest-footer">
-              <div class="dest-price">
-                <span class="dest-price-label">Qiimaha laga bilaabo</span>
-                <span class="dest-price-value">$110<span>/qof</span></span>
-              </div>
-              <a href="#" class="btn-book" id="btn-book-5">Hada Boos Qabso</a>
-            </div>
-          </div>
-        </div>
-        <!-- Destination 6: Beledweyne -->
-        <!-- Destination 6: Berbera -->
-        <div class="dest-card">
-          <div class="dest-img-container">
-            <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=800&q=80" alt="Beledweyne, Soomaaliya">
-            <span class="dest-badge">Wabiga</span>
-            <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80" alt="Berbera, Soomaaliya">
-            <span class="dest-badge">Xeeb & Deked</span>
-            <button class="dest-wishlist" id="wishlist-6"><i class="fa-regular fa-heart"></i></button>
-          </div>
-          <div class="dest-info">
-            <div class="dest-meta">
-              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.6 (85 Review)</span>
-              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.7 (98 Review)</span>
-              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 3 Maalmood</span>
-            </div>
-            <h3 class="dest-title">Dooxada Hiiraan</h3>
-            <h3 class="dest-title">Xeebta Batalaale</h3>
-            <div class="dest-location">
-              <i class="fa-solid fa-location-dot"></i> Beledweyne, Hiiraan
-              <i class="fa-solid fa-location-dot"></i> Berbera, Saaxil
-            </div>
-            <div class="dest-footer">
-              <div class="dest-price">
-                <span class="dest-price-label">Qiimaha laga bilaabo</span>
-                <span class="dest-price-value">$120<span>/qof</span></span>
-                <span class="dest-price-value">$145<span>/qof</span></span>
-              </div>
-              <a href="#" class="btn-book" id="btn-book-6">Hada Boos Qabso</a>
-            </div>
-          </div>
-        </div>
-        <!-- Destination 7: Gaalkacyo -->
-        <div class="dest-card">
-          <div class="dest-img-container">
-            <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=800&q=80" alt="Gaalkacyo, Soomaaliya">
-            <span class="dest-badge">Ganacsi</span>
-            <button class="dest-wishlist" id="wishlist-7"><i class="fa-regular fa-heart"></i></button>
-          </div>
-          <div class="dest-info">
-            <div class="dest-meta">
-              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.7 (105 Review)</span>
-              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 3 Maalmood</span>
-            </div>
-            <h3 class="dest-title">Gaalkacyo Hub</h3>
-            <div class="dest-location">
-              <i class="fa-solid fa-location-dot"></i> Mudug, Soomaaliya
-            </div>
-            <div class="dest-footer">
-              <div class="dest-price">
-                <span class="dest-price-label">Qiimaha laga bilaabo</span>
-                <span class="dest-price-value">$125<span>/qof</span></span>
-              </div>
-              <a href="#" class="btn-book" id="btn-book-7">Hada Boos Qabso</a>
-            </div>
-          </div>
-        </div>
-        <!-- Destination 8: Burco -->
-        <div class="dest-card">
-          <div class="dest-img-container">
-            <img src="https://images.unsplash.com/photo-1472214222555-d404758b1c42?auto=format&fit=crop&w=800&q=80" alt="Burco, Soomaaliya">
-            <span class="dest-badge">Xoolaha & Taariikh</span>
-            <button class="dest-wishlist" id="wishlist-8"><i class="fa-regular fa-heart"></i></button>
-          </div>
-          <div class="dest-info">
-            <div class="dest-meta">
-              <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.8 (115 Review)</span>
-              <span class="dest-duration"><i class="fa-solid fa-clock"></i> 3 Maalmood</span>
-            </div>
-            <h3 class="dest-title">Magaalada Burco</h3>
-            <div class="dest-location">
-              <i class="fa-solid fa-location-dot"></i> Togdheer, Somaliland
-            </div>
-            <div class="dest-footer">
-              <div class="dest-price">
-                <span class="dest-price-label">Qiimaha laga bilaabo</span>
-                <span class="dest-price-value">$135<span>/qof</span></span>
-              </div>
-              <a href="#" class="btn-book" id="btn-book-8">Hada Boos Qabso</a>
-            </div>
-          </div>
+        <div class="row">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg>
+          <span>info@technicalqardho.edu.so</span>
         </div>
       </div>
     </div>
-  </section>
-  <!-- Services Section -->
-  <section class="section-padding services" id="services">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Maxaan Qabanaa</span>
-        <h2 class="section-title">Adeegyadeena <span>Khaaska Ah</span></h2>
-      </div>
-      
-      <div class="services-grid">
-        <!-- Service 1 -->
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-plane-departure"></i>
-          </div>
-          <h3 class="service-title">Tigidho Diyaarad</h3>
-          <p class="service-desc">Waxaan kuu goynaynaa tigidho jaban oo ku haboon duulimaad kasta, ha ahaato gudaha ama dibada.</p>
-        </div>
-        <!-- Service 2 -->
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-hotel"></i>
-          </div>
-          <h3 class="service-title">Boos-qabasho Hoteel</h3>
-          <p class="service-desc">Waxaan xiriir la leenahay hoteelada ugu fiican aduunka si aad u hesho meel raaxo leh oo jaban.</p>
-        </div>
-        <!-- Service 3 -->
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-map-location-dot"></i>
-          </div>
-          <h3 class="service-title">Hageyaal Safar</h3>
-          <p class="service-desc">Waxaad heleysaa hageyaal khibrad leh oo yaqaana goobaha taariikhiga ah iyo kuwa dalxiiska.</p>
-        </div>
-        <!-- Service 4 -->
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-shield-halved"></i>
-          </div>
-          <h3 class="service-title">Ceymiska Safarka</h3>
-          <p class="service-desc">Ku safr kalsooni buuxda anagoo ku siineyna ceymis daboolaya caafimaadkaaga iyo shandadahaaga.</p>
-        </div>
-      </div>
+    <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('.sent').style.display='block';">
+      <label for="name">Magaca</label>
+      <input id="name" type="text" placeholder="Magacaaga oo buuxa" required>
+      <label for="phone">Telefoonka</label>
+      <input id="phone" type="tel" placeholder="+252 ..." required>
+      <label for="msg">Fariinta</label>
+      <textarea id="msg" placeholder="Qor su'aashaada ama fariintaada halkan..."></textarea>
+      <button type="submit" class="btn btn-amber" style="width:100%; justify-content:center;">Dir Fariinta</button>
+      <p class="sent" style="display:none; color:var(--amber); margin-top:14px; font-size:14px;">Waad ku mahadsan tahay! Fariintaadu way gaadhay.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div class="brand">
+      <div class="brand-mark">TQ</div>
+      <div class="brand-text"><div class="t1">Technical Qardho School</div></div>
     </div>
-  </section>
-  <!-- Stats Section -->
-  <section class="stats">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item">
-          <span class="stat-number">12k+</span>
-          <span class="stat-title">Macaamiil</span>
-          <span class="stat-desc">Kuwaas oo nala safray oo nagu kalsoonaaday</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number">150+</span>
-          <span class="stat-title">Goobo Safar</span>
-          <span class="stat-desc">Goobo dalxiis oo kala duwan oo aduunka ah</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number">15+</span>
-          <span class="stat-title">Sano Khibrad</span>
-          <span class="stat-desc">Khibrad iyo hufnaan shaqo oo dheer</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number">99%</span>
-          <span class="stat-title">Qanacsanaan</span>
-          <span class="stat-desc">Dhibcaha ay na siiyeen dadkii nala safray</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Testimonials Section -->
-  <section class="section-padding" id="testimonials">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Macaamiisha</span>
-        <h2 class="section-title">Waxa Ay <span>Naga Yiraahdeen</span></h2>
-      </div>
-      
-      <div class="testimonials-grid">
-        <!-- Testimonial 1 -->
-        <div class="testi-card">
-          <span class="testi-quote">“</span>
-          <div class="testi-stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <p class="testi-text">
-            "Waxaan Shirkada Super kala soo qayb qaatay safarkii Muqdisho iyo xeebteeda Lido, runtii waxay ahayd khibrad aad u cajiib ah oo aan la ilaawi karin. Adeeggoodu waa heer sare."
-          </p>
-          <div class="testi-author">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Ahmed Ali" class="testi-avatar">
-            <div class="testi-author-info">
-              <h4>siciid khaliif</h4>
-              <p>Ganacsade</p>
-            </div>
-          </div>
-        </div>
-        <!-- Testimonial 2 -->
-        <div class="testi-card">
-          <span class="testi-quote">“</span>
-          <div class="testi-stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <p class="testi-text">
-            "Shirkada Super waa shirkada kaliya ee aan ku kalsoonahay marka ay timaado dalxiiska gudaha dalka Soomaaliya iyo tikidhada diyaaradaha. Si fudud ayaad u dalban kartaa."
-          </p>
-          <div class="testi-author">
-            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Faduma Hassan" class="testi-avatar">
-            <div class="testi-author-info">
-              <h4>ustaad samiira maxamed</h4>
-              <p>Macalimad</p>
-            </div>
-          </div>
-        </div>
-        <!-- Testimonial 3 -->
-        <div class="testi-card">
-          <span class="testi-quote">“</span>
-          <div class="testi-stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <p class="testi-text">
-            "Safar aan u galay magaalada taariikhiga ah ee Hargeysa iyo buuraha Naasa Hablood waxaa ii qorsheysay Shirkada Super. Wax walba waxay ahaayeen kuwo si heersare ah loo agaasimay."
-          </p>
-          <div class="testi-author">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Mohamed Yusuf" class="testi-avatar">
-            <div class="testi-author-info">
-              <h4>cabdiraxman axmed qadiga</h4>
-              <p>Injineer</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Newsletter Section -->
-  <section class="newsletter">
-    <div class="container">
-      <div class="newsletter-box">
-        <h2 class="newsletter-title">Ku Bixi Warsidahayaga</h2>
-        <p class="newsletter-desc">Kala soco qiimo dhimista safarada iyo xirmooyinka dalxiiska ee cusub ee Shirkada Super.</p>
-        <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault(); alert('Waad ku mahadsantahay isqoristaada!');">
-          <input type="email" id="newsletter-email" placeholder="Geli iimaylkaaga..." required>
-          <button type="submit" id="btn-newsletter">Ku Bixi</button>
-        </form>
-      </div>
-    </div>
-  </section>
-  <!-- Footer -->
-  <footer class="footer" id="contact">
-    <div class="container footer-grid">
-      <div class="footer-column">
-        <div class="logo footer-logo">
-          <div class="logo-icon">
-            <i class="fa-solid fa-paper-plane"></i>
-          </div>
-          SHIRKADA<span>SUPER</span>
-        </div>
-        <p class="footer-desc">
-          Shirkada Super waa shirkad kuugu adeegta hab casri ah, hufan, iyo kalsooni leh. Safarkaaga iyo raaxadaada waa hadafkayaga ugu muhiimsan.
-        </p>
-        <div class="social-links">
-          <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
-        </div>
-      </div>
-      
-      <div class="footer-column">
-        <h3>Xiriirada Degdega ah</h3>
-        <div class="footer-links">
-          <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Hoyga</a>
-          <a href="#destinations" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Goobaha Dalxiiska</a>
-          <a href="#services" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Adeegyada</a>
-          <a href="#testimonials" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Macaamiisha</a>
-        </div>
-      </div>
-      <div class="footer-column">
-        <h3>Adeegyada Kale</h3>
-        <div class="footer-links">
-          <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Safarada Qoyska</a>
-          <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Dalxiisyada Gaarka ah</a>
-          <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Duulimaadyada Ganacsiga</a>
-          <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Caawinaada 24/7</a>
-        </div>
-      </div>
-      <div class="footer-column">
-        <h3>Nala Soo Xiriir</h3>
-        <div class="footer-contact">
-          <div class="contact-item">
-            <i class="fa-solid fa-location-dot"></i>
-            <div class="contact-text">
-              <h4>Cinwaanka</h4>
-              <p>Maka Al-Mukarama Road, Qardho, Somalia</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <i class="fa-solid fa-phone"></i>
-            <div class="contact-text">
-              <h4>Telefoonka</h4>
-              <p>+252 5359698</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <i class="fa-solid fa-envelope"></i>
-            <div class="contact-text">
-              <h4>Iimaylka</h4>
-              <p>info@supertravel.so</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="container footer-bottom">
-      <p>&copy; 2026 Shirkada Super. Xuquuqda oo dhan waa dhowran tahay.</p>
-      <div class="footer-bottom-links">
-        <a href="#">Shuruudaha</a>
-        <a href="#">Khaaska</a>
-      </div>
-    </div>
-  </footer>
-  <!-- Basic Interaction Script -->
-  <script>
-    const header = document.getElementById('header');
-    
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
-    // Simple interaction for wishlist hearts
-    const wishlists = document.querySelectorAll('.dest-wishlist');
-    wishlists.forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        const icon = btn.querySelector('i');
-        if (icon.classList.contains('fa-regular')) {
-          icon.classList.remove('fa-regular');
-          icon.classList.add('fa-solid');
-          icon.style.color = '#ff4a5a';
-        } else {
-          icon.classList.remove('fa-solid');
-          icon.classList.add('fa-regular');
-          icon.style.color = '';
-        }
-      });
-    });
-  </script>
+    <div>© 2026 Technical Qardho School — Dhammaan xuquuqda way dhowran tahay.</div>
+  </div>
+</footer>
+
+<script>
+  const burger = document.querySelector('.burger');
+  const navLinks = document.querySelector('.nav-links');
+  const navCta = document.querySelector('.nav-cta');
+  burger.addEventListener('click', () => {
+    const open = navLinks.style.display === 'flex';
+    navLinks.style.display = open ? 'none' : 'flex';
+    navCta.style.display = open ? 'none' : 'flex';
+    navLinks.style.flexDirection = 'column';
+    navLinks.style.position = 'absolute';
+    navLinks.style.top = '68px';
+    navLinks.style.left = '0';
+    navLinks.style.right = '0';
+    navLinks.style.background = 'rgba(10,38,71,0.98)';
+    navLinks.style.padding = '20px 32px';
+    navLinks.style.gap = '18px';
+  });
+</script>
+
 </body>
 </html>
